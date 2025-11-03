@@ -7,11 +7,13 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content:center;
     margin-top: 0px auto;
     gap: 10px;
     padding: 2px;
     border: 1px solid #e0e4e8;
+        
+
   }
 
 
@@ -76,3 +78,36 @@ footer{
     border-radius: 10px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   }
+
+#btn-trier{
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+
+.btn-resver{
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-resver:hover{
+    background-color: #011308;
+}
+
