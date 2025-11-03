@@ -19,9 +19,10 @@ sessionStorage.setItem("bibliotheque", JSON.stringify(bibliotheque));
     let indisponibles = document.getElementById("indisponibles");
 
     let btntrier = document.getElementById("btn-trier");
-    
+    let ordreAsc = true;
     btntrier.addEventListener("click", function() {
-        bibliotheque.sort((a, b) => a.titre.localeCompare(b.titre));
+        bibliotheque.sort((a, b) => (ordreAsc)? a.titre.localeCompare(b.titre):b.titre.localeCompare(a.titre));
+        ordreAsc = !ordreAsc;
         container.innerHTML = "";
         aficherLivre();
     });
@@ -46,6 +47,8 @@ sessionStorage.setItem("bibliotheque", JSON.stringify(bibliotheque));
                 livre.disponible = false;
                 btnreserver.textContent = "Rendre";
                 card.querySelector(".disponible").textContent = "Disponible: Non"; 
+                sessionStorage.setItem("bibliotheque", JSON.stringify(bibliotheque));
+                majStats();
             }
         });
         
