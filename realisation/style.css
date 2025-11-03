@@ -28,6 +28,7 @@ body {
 }
 
 .btn-supprimer{
+    
     background-color: #dc3545;
     color: white;
     border-radius: 5px;
@@ -43,7 +44,7 @@ body {
 
 
 .btn-supprimer:hover{
-    background-color: #c82333;
+    background-color: #ff0019;
 }
 
 
@@ -62,8 +63,18 @@ header {
   }
 
 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    color: #3498db;
+    color: #f0f3f5;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(6, 145, 239);
+    height: 30px;
 }
 footer{
     margin-top: 30px;
@@ -109,5 +120,21 @@ footer{
 
 .btn-resver:hover{
     background-color: #011308;
+}
+
+
+#recherche{
+    background-color: #c0daf0;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
 }
 
